@@ -9,7 +9,7 @@ using System.Reflection.Emit;
 using System.Windows.Media.Media3D;
 using Bio;
 using Bio.IO;
-//using HelixToolkit.Wpf;
+
 namespace BioInfa
 {
     public partial class MainWindow : Window
