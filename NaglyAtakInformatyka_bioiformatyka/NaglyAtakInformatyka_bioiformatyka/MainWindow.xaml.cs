@@ -26,7 +26,7 @@ namespace BioInfa
             
             int b = BudowaBialka.Walidacja(rnax);
             start:
-            //start
+            
 
             //Output1.Content = BudowaBialka.Walidacja(rnax);
             if (b == 0)
