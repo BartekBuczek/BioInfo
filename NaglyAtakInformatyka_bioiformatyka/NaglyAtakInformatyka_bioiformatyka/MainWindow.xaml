@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BioInfa"
         mc:Ignorable="d"
         WindowStyle="SingleBorderWindow"
-        Title="BioInformatyka"
+        Title="Białkoinator"
         Height="810" Width="1440"
         ResizeMode="CanResize"
         Background="Transparent" >
@@ -14,6 +14,9 @@
             Margin="0"
             Padding="0">
         <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="grafika/background main.png" Stretch="Fill"/>
+            </Grid.Background>
             <Grid.RowDefinitions>
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
@@ -23,24 +26,6 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-
-            <StackPanel Grid.RowSpan="2"
-                        Background="#2d2854"
-                        Margin="0">
-                <TextBlock Text="BioInformatyka"
-                       Margin="5"
-                       VerticalAlignment="top"
-                       HorizontalAlignment="Center"
-                       Foreground="WhiteSmoke"
-                       FontSize="22" />
-                <TextBlock Text="by NaglyAtakInformatyka"
-                       Margin="5"
-                       VerticalAlignment="Bottom"
-                       HorizontalAlignment="Center"
-                       Foreground="WhiteSmoke"
-                       FontSize="15" />
-
-            </StackPanel>
 
             <Label Content="Input RNA or DNA"
                    FontSize="25"
@@ -142,7 +127,17 @@
                    VerticalAlignment="Top"
                    HorizontalAlignment="Center"
                    Margin="0 250 0 0" />
-
+            <Label Content=""
+                   Name="Output4"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="1"
+                   Background="Transparent"
+                   Foreground="WhiteSmoke"
+                   FontSize="25"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center"
+                   Margin="0 300 0 0" />
 
 
             <!--8.10-->

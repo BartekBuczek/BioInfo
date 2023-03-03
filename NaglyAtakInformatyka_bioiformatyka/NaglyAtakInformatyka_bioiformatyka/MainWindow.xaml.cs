@@ -45,7 +45,6 @@ namespace BioInfa
                     end[i] = 0;
                     for (int j = end[i]; j < rnax.Length / 3; j++)
                     {
-                        Console.WriteLine("end {0}", end);
                         loop = false;
                         if (r[i, j] == 'M')
                         {
@@ -61,8 +60,8 @@ namespace BioInfa
                                     for (int index = j; index <= k; index++)
                                     {
                                         o[i] += Convert.ToString(r[i, index]);
-                                        Console.WriteLine("Powstajace bialko {0}", o[i]);
                                     }
+                                    o[i] += ' ';
                                     end[i] = k;
                                     //Console.WriteLine("Start {0}, Stop {1}", start, stop);
                                     bialka[bialko] = stop - start;
@@ -81,12 +80,12 @@ namespace BioInfa
                         }
                     }
                     najdluzsze += o[i];
-                    Console.WriteLine("Najdluzsze {0}", najdluzsze);
                 }
                 najdluzsze = BudowaBialka.NajdluzszeBialko(najdluzsze_bialko, najdluzsze);
                 Output1.Content = o[0];
                 Output2.Content = o[1];
                 Output3.Content = o[2];
+                Output4.Content = najdluzsze;
                 // Console.WriteLine(najdluzsze);
             }
             else if (BudowaBialka.Walidacja(rnax) == 1)

@@ -388,17 +388,13 @@ namespace BioInfa
                         if (rna[k] == 'X')
                         {
                             end = k + 1;
-                            Console.WriteLine(start);
-                            Console.WriteLine(end);
                             protein = end - start;
-                            Console.WriteLine(protein);
 
                             if (najdluzsze_bialko == protein && !loop)
                             {
                                 for (int index = j; index <= k; index++)
                                 {
                                     gotowe += rna[index];
-                                    Console.WriteLine(gotowe);
                                 }
                                 goto koniec;
                             }
@@ -406,10 +402,6 @@ namespace BioInfa
                             {
                                 start = 0; end = 0;
                             }
-                        }
-                        else
-                        {
-                            Console.WriteLine("Cos nie pyklo");
                         }
                     }
                 }

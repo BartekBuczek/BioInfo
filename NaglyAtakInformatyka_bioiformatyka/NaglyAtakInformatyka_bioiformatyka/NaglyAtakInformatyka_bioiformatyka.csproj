@@ -293,6 +293,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Graphic.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -338,6 +339,21 @@
     <Analyzer Include="..\packages\Roslynator.CodeFixes.1.9.0\analyzers\dotnet\cs\Roslynator.CSharp.CodeFixes.dll" />
     <Analyzer Include="..\packages\Roslynator.CodeFixes.1.9.0\analyzers\dotnet\cs\Roslynator.CSharp.dll" />
     <Analyzer Include="..\packages\Roslynator.CodeFixes.1.9.0\analyzers\dotnet\cs\Roslynator.CSharp.Workspaces.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="background main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="grafika\back.png" />
+    <Resource Include="grafika\background credits.png" />
+    <Resource Include="grafika\background main.png" />
+    <Resource Include="grafika\background popup.png" />
+    <Resource Include="grafika\cancel.png" />
+    <Resource Include="grafika\credits.png" />
+    <Resource Include="grafika\from file.png" />
+    <Resource Include="grafika\start.png" />
+    <Resource Include="grafika\textbox.png" />
+    <Resource Include="grafika\write.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
