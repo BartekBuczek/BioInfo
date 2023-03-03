@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         WindowStyle="SingleBorderWindow"
         Title="BioInformatyka"
-        Height="600" Width="920"
+        Height="810" Width="1440"
         ResizeMode="CanResize"
         Background="Transparent" >
     <Border Background="#272537" 
